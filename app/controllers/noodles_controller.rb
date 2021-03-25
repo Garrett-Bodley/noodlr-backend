@@ -1,0 +1,2 @@
+class NoodlesController < ApplicationController
+end
