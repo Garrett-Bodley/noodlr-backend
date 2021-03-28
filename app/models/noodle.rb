@@ -1,4 +1,4 @@
 class Noodle < ApplicationRecord
   belongs_to :user
-  has_one_attached :recording
+  # has_one_attached :recording
 end
