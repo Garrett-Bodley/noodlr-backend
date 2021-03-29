@@ -1,0 +1,2 @@
+class Vamp < ApplicationRecord
+end

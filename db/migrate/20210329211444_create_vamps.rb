@@ -1,6 +1,6 @@
-class CreateNoodles < ActiveRecord::Migration[6.1]
+class CreateVamps < ActiveRecord::Migration[6.1]
   def change
-    create_table :noodles do |t|
+    create_table :vamps do |t|
       t.belongs_to :user
       t.json :notation
       t.timestamps
