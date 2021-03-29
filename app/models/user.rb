@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :noodles
+  has_many :vamps
 end
