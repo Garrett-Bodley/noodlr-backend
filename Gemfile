@@ -16,8 +16,11 @@ gem 'puma', '~> 5.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-#Javascript Web Token gem
+# Javascript Web Token gem
 gem 'jwt'
+
+#  User Serializers
+gem 'active_model_serializers'
 
 # Handle .env file
 gem 'dotenv-rails'
