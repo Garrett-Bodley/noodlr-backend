@@ -19,6 +19,9 @@ gem 'bcrypt', '~> 3.1.7'
 #Javascript Web Token gem
 gem 'jwt'
 
+# Handle .env file
+gem 'dotenv-rails'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
