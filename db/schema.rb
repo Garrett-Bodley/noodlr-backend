@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_29_211444) do
+ActiveRecord::Schema.define(version: 2021_04_07_171824) do
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -20,10 +20,13 @@ ActiveRecord::Schema.define(version: 2021_03_29_211444) do
   end
 
   create_table "vamps", force: :cascade do |t|
+    t.string "name"
     t.integer "user_id"
-    t.json "notation"
+    t.text "notation"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "volume"
+    t.integer "tempo"
     t.index ["user_id"], name: "index_vamps_on_user_id"
   end
 
