@@ -4,29 +4,29 @@ class VampsController < ApplicationController
     vamp = Vamp.new(vamp_params)
     vamp.user = current_user
     vamp.save
-    render json: vamp
+    render json: vamp, status: :ok
   end
 
   def index
     user_vamps = Vamp.where(user_id: current_user.id)
-    render json: user_vamps
+    render json: user_vamps, status: :ok
   end
 
   def show
     vamp = Vamp.find_by(user_id: current_user.id, id: params[:id])
-    render json: vamp
+    render json: vamp, status: :ok
   end
 
   def update
     vamp = Vamp.find_by(user_id: current_user.id, id: params[:id])
     vamp.update(vamp_params)
-    render json: vamp
+    render json: vamp, status: :ok
   end
 
   def destroy
     vamp = Vamp.find_by(user_id: current_user, id: params[:id])
     vamp.destroy
-    render json: params[:id]
+    render json: params[:id], status: :ok
   end
   
   private
