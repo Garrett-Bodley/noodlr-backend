@@ -14,7 +14,11 @@ class VampsController < ApplicationController
 
   def show
     vamp = Vamp.find_by(user_id: current_user.id, id: params[:id])
-    render json: vamp, status: :ok
+    if !!vamp
+      render json: vamp, status: :ok
+    else
+      render json: {message: 'Vamp not found'}, status: :not_acceptable
+    end
   end
 
   def update
