@@ -1,24 +1,5 @@
-# README
+# Noodlr - Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run locally first run `bundle install`. You will need to set to declare a `JWT_SECRET` variable inside of a `.env` file. I recommend using SecureRandom to generate your secret. After that `rails db:migrate` and you should be all set to start the server.
