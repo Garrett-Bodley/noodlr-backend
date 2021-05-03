@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :vamps
 
   post '/login', to: 'auth#create'
+  post '/encode', to: 'noodles#encode', as: 'encode'
 
 end
