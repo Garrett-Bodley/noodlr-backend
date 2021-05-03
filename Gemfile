@@ -17,6 +17,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Javascript Web Token gem
 gem 'jwt'
 
+# For using ffmpeg with Rails
+gem 'streamio-ffmpeg', '~> 3.0', '>= 3.0.2'
+
 #  User Serializers
 gem 'active_model_serializers'
 
