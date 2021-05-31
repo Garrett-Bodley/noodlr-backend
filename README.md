@@ -13,7 +13,7 @@
 
 ## Install
 
-You will need to set to declare a `JWT_SECRET` variable inside of a `.env` file. I recommend using SecureRandom to generate your secret. Then run the following commands:
+You will need to set to declare a `JWT_SECRET` variable inside of a `.env` file. I recommend using `SecureRandom` to generate your secret. Then run the following commands:
 
 ```sh
 bundle install
